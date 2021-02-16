@@ -1,0 +1,71 @@
+/**
+ * @name Popup Settings Revamp
+ * @description Makes the settings appear as a popup. Ported from Lightcord, fixed for BetterDiscord Beta. Additionally adds a clear difference in invisible vs. offline status colors, and makes the other status colors more vivid.
+ * @author Haise0
+ * @version 0.1
+ * @source 
+ * @donate https://paypal.me/kaiCorporation
+ * @authorLink https://github.com/haise0/
+ */
+
+:root {
+    --setting-popout-title: "App Settings";
+    --guild-setting-popout-title: "Server Settings";
+    --public-servers-popout-title: "Public Servers";
+    --setting-popout-font: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    --rs-small-spacing: 2px;
+    --rs-large-spacing: 3px;
+    --rs-width: 2px;
+    --rs-avatar-shape: 50%;
+    --rs-online-color: #00ff00;
+    --rs-idle-color: #ffe600;
+    --rs-dnd-color: #ff0000;
+    --rs-offline-color: #57585a;
+    --rs-streaming-color: #d903e0;
+    --rs-invisible-color: #e9e7bf;
+
+}
+
+@media only screen and (min-width: 1280px) and (min-height: 738px) {
+    #app-mount > div.app-1q1i1E.da-app > div > div.layers-3iHuyZ.da-layers.layers-3q14ss > div:nth-child(2) {
+        width: 1280px;
+        height: 720px;
+        padding-top: 0px;
+        left: calc(calc(100% - 1280px) / 2);
+        top: calc(calc(100% - 720px) / 2);
+    }
+    
+    /** Guild and User Settings */
+    
+    .standardSidebarView-3F1I7i {
+        color: var(--text-normal);
+        content: var(--setting-popout-title);
+        font-weight: 600;
+        font-family: var(--setting-popout-font);
+        padding-left: 5px;
+        padding-top: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 101;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #36393f9c
+    }
+    
+    .baseLayer-35bLyl.stop-animations, .baseLayer-35bLyl.animating-rRxada {
+        transform: none !important;
+        pointer-events: none;
+    }
+    .baseLayer-35bLyl.stop-animations {
+        opacity: 20% !important;
+    }
+}
+
+.theme-dark {
+    --text-link: #2adcec;
+}
+
