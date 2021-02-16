@@ -1,0 +1,12 @@
+/**
+ * @name Popup Settings Revamp
+ * @description Makes the settings appear as a popup. Ported from Lightcord, fixed for BetterDiscord Beta. Additionally adds a clear difference in invisible vs. offline status colors, and makes the other status colors more vivid.
+ * @author Haise0
+ * @version 0.1
+ * @source https://github.com/haise0/BetterDiscordAddons/blob/main/themes/source/PopoutSettings-Revamp.css
+ * @donate https://paypal.me/kaiCorporation
+ * @authorLink https://github.com/haise0/
+ */
+
+
+@import url (https://raw.githubusercontent.com/haise0/BetterDiscordAddons/main/themes/source/PopoutSettings-Revamp.css)
